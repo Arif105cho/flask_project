@@ -22,3 +22,4 @@ class LoginSerializer(Serializer):
            return Response({'user':'login successfully'})
         return data
 
+
