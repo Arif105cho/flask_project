@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <!-- Bootstrap CSS library -->
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity=
+"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body>
+<form method="post" action="home" style="margin:5%">
+{% csrf_token %}
+    LOGIN<br>
+    <table>
+        <label for="">Password</label>
+    <input type="text" style="margin:5px; height:30px; width:300px;" placeholder="password" name="password"><br>
+        <label style="">Email</label>
+    <input type="text" placeholder="email"   style="margin:5px; margin-left:27px; height:30px; width:300px;" name="email"><br>
+        {{ form.as_table }}
+    </table>
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

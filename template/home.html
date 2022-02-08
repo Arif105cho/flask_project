@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2>Get Data From Database</h2>
+
+<!--{{form.as_p}}-->
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--    <th>Email</th>-->
+<!--    <th> Full_name</th>-->
+
+<!--    <th>Password</th>-->
+<!--    <th> Username</th>-->
+<!--</tr>-->
+<!--    {% for i in user %}-->
+<!--    <tr>-->
+<!--        <td> {{ i.email }} </td>-->
+<!--        <td>{{ i.full_name }} </td>-->
+<!--        <td> {{ i.password }} </td>-->
+<!--        <td>{{ i.username }} </td>-->
+
+
+<!--    </tr>-->
+
+<!--    {% endfor %}-->
+<!--</table>-->
+<!--{{ forms.as_p}}-->
+<!--<br>-->
+<!--<form action="" method="post" style="">-->
+<!--    <p style="color:Blue; margin-left:250px; height:30px; width:200px;">SignUp<br>-->
+
+    {% csrf_token %}
+    <div style="margin:2%; background-color:yellow; padding: 5px; margin-left:250px; border: solid blue 1px; width:50%">
+        <label for="">Username</label>
+    <input  type="text"  style="margin:5px; height:30px; width:300px;  " placeholder="usernama" name="username"><br>
+        <label for="">Full Name</label>
+    <input type="text" style="margin:5px; height:30px; width:300px;" placeholder="fullName" name="full_name"><br>
+        <label for="">Password</label>
+    <input type="text" style="margin:5px; height:30px; width:300px;" placeholder="password" name="password"><br>
+        <label style="">Email</label>
+    <input type="text" placeholder="email"   style="margin:5px; margin-left:27px; height:30px; width:300px;" name="email"><br>
+    <button type="submit"><a href="http://127.0.0.1:8000/Project/signin/"> Login</a></button>
+    <button type="submit">sumbit</button>
+        </div>
+</form>
+
+</body>
+</html>
